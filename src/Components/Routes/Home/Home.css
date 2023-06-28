@@ -1,0 +1,52 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("mail-box-img.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Home__content {
+    text-align: center;
+    color: gray;
+  }
+  
+  .Home__title {
+    font-size: 72px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    animation: blinkText 2s linear infinite;
+  }
+  
+  @keyframes blinkText {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .Home__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Home__title {
+      font-size: 48px;
+    }
+  
+    .Home__subtitle {
+      font-size: 18px;
+    }
+  }
+  
